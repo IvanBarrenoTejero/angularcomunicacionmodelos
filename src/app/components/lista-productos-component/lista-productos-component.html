@@ -1,0 +1,13 @@
+<h1>Lista de productos</h1>
+<p>{{ producto.nombre }}</p>
+<p>Precio: {{ producto.precio }}</p>
+<img src="{{ producto.imagen }}" style="width: 150px; height: 150px" alt="{{ producto.nombre }}" />
+@for (producto of listaproductos; track $index) {
+  <p>{{ producto.nombre }}</p>
+  <p>Precio: {{ producto.precio }}</p>
+  <img
+    src="{{ producto.imagen }}"
+    style="width: 150px; height: 150px"
+    alt="{{ producto.nombre }}"
+  />
+}

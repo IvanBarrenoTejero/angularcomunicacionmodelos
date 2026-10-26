@@ -13,6 +13,7 @@ import { PadreNumerosComponent } from './components/padre-numeros-component/padr
 import { HijoNumeroComponent } from './components/hijo-numero-component/hijo-numero-component';
 import { ComicsSimpleComponents } from './components/comics-simple-components/comics-simple-components';
 import { ComicsJsonComponent } from './components/comics-json-component/comics-json-component';
+import { ComicsExcelComponent } from './components/comics-excel-component/comics-excel-component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ComicsJsonComponent } from './components/comics-json-component/comics-j
     HijoNumeroComponent,
     ComicsSimpleComponents,
     ComicsJsonComponent,
+    ComicsExcelComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [provideBrowserGlobalErrorListeners()],

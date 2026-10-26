@@ -1,0 +1,18 @@
+<h1>Lista de cómics</h1>
+<button type="button" (click)="cargarComics()">Cargar cómics</button>
+
+@if (errorMessage) {
+  <p>{{ errorMessage }}</p>
+}
+
+@for (comic of arrayComics; track comic.titulo) {
+  <article>
+    <h2>{{ comic.titulo }}</h2>
+    <p>{{ comic.descripcion }}</p>
+    <img
+      [src]="comic.imagen"
+      [alt]="'Portada de ' + comic.titulo"
+      style="width: 150px; height: 220px; object-fit: contain;"
+    />
+  </article>
+}

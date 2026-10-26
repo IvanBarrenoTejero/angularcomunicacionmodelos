@@ -1,0 +1,18 @@
+<section class="comics">
+  <h1>Lista de cómics</h1>
+  <button type="button" class="load-button" (click)="cargarComics()">
+    Cargar cómics
+  </button>
+
+  @if (arrayComics.length > 0) {
+    <div class="comic-grid">
+      @for (comic of arrayComics; track comic.titulo) {
+        <article class="comic-card">
+          <h2>{{ comic.titulo }}</h2>
+          <img [src]="comic.imagen" [alt]="'Portada de ' + comic.titulo" />
+          <p>{{ comic.descripcion }}</p>
+        </article>
+      }
+    </div>
+  }
+</section>

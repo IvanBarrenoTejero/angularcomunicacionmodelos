@@ -1,0 +1,55 @@
+.comics {
+  padding: 1.5rem;
+}
+
+.comics h1 {
+  margin-top: 0;
+}
+
+.load-button {
+  background-color: #1976d2;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.7rem 1.2rem;
+}
+
+.load-button:hover {
+  background-color: #125ca1;
+}
+
+.comic-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  margin-top: 1.5rem;
+}
+
+.comic-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 12%);
+  padding: 1rem;
+  text-align: center;
+}
+
+.comic-card h2 {
+  color: #1565c0;
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+.comic-card img {
+  display: block;
+  height: 220px;
+  margin: 0 auto 1rem;
+  max-width: 100%;
+  object-fit: contain;
+  width: 150px;
+}
+
+.comic-card p {
+  margin-bottom: 0;
+}
